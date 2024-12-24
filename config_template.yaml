@@ -1,0 +1,29 @@
+vcf: "path/to/vcf.gz"
+
+group:
+  JAP: "/mnt/f/Genome/NP.2023.GeSong/results/groups/jap.txt"
+  IND: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ind.txt"
+  Niv1: "/mnt/f/Genome/NP.2023.GeSong/results/groups/niv1.txt"
+  Niv2: "/mnt/f/Genome/NP.2023.GeSong/results/groups/niv2.txt"
+  Ruf1: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ruf1.txt"
+  Ruf2: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ruf2.txt"
+  Wild: "/mnt/f/Genome/NP.2023.GeSong/results/groups/wild.txt"
+  Domesticated: "/mnt/f/Genome/NP.2023.GeSong/results/groups/cultivated.txt"
+
+
+region:
+  upstream10k:
+    chromosome: chr01
+    start: 10000
+    end: 20000
+  gene_body:
+    chromosome: chr01
+    start: 20001
+    end: 29999
+  downstream10k:
+    chromosome: chr01
+    start: 30000
+    end: 40000
+
+region_window: 10000000
+
