@@ -1,16 +1,13 @@
 name: "my_gene"
 
-vcf: "path/to/vcf.gz"
+# Supply .bed file path (.bim and .fam file need to be in the same directory),
+# or .vcf.gz file path (need to be bgzipped or with .tbi index file in the same directory).
+variant_data: "/mnt/f/Genome/3K-RG/rawdata/SNP-Seek/Nipponbare_indel.bed"
+
 
 group:
-  JAP: "/mnt/f/Genome/NP.2023.GeSong/results/groups/jap.txt"
-  IND: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ind.txt"
-  Niv1: "/mnt/f/Genome/NP.2023.GeSong/results/groups/niv1.txt"
-  Niv2: "/mnt/f/Genome/NP.2023.GeSong/results/groups/niv2.txt"
-  Ruf1: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ruf1.txt"
-  Ruf2: "/mnt/f/Genome/NP.2023.GeSong/results/groups/ruf2.txt"
-  Wild: "/mnt/f/Genome/NP.2023.GeSong/results/groups/wild.txt"
-  Domesticated: "/mnt/f/Genome/NP.2023.GeSong/results/groups/cultivated.txt"
+  group1: "path/to/group1.txt"
+  group2: "path/to/group2.txt"
 
 
 region:
