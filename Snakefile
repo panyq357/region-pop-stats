@@ -3,7 +3,7 @@ configfile: "config.yaml"
 
 rule all:
     input:
-        "results/collect_vcftools_region_res.csv"
+        "results/" + config["name"] + ".collect_vcftools_region_res.csv"
 
 
 rule vcftools_group_region:
@@ -61,7 +61,7 @@ rule collect_vcftools_region_res:
         expand("results/group_region/{grp}.{region}.Tajima.D", region=config["region"], grp=config["group"]),
         expand("results/group_region/{grp}.{region}.windowed.scaled.pi", region=config["region"], grp=config["group"])
     output:
-        "results/collect_vcftools_region_res.csv"
+        "results/" + config["name"] + ".collect_vcftools_region_res.csv"
     script:
         "scripts/collect_vcftools_region_res.R"
 
